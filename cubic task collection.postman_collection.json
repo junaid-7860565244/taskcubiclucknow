@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "855501c2-0bd0-44ee-baa1-ce91ea28a747",
+		"name": "cubic task collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/user_verify_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "otp",
+							"value": "5960",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/user_verify_otp"
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "7860565544",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/user_login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/wallet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWNhYTYyY2QzZWU4YjM3YjM0ZTU1ZDc1MmE3YmQ1MDliOTgzOTgzYjk3ZjEzYTQzMmJlN2EzMmFlMDE1MTcxYzg5NGE0MjNiNWIyNjhhMjciLCJpYXQiOjE2ODU1NjQ3MTcuMzMzMjgxLCJuYmYiOjE2ODU1NjQ3MTcuMzMzMjg0LCJleHAiOjE3MTcxODcxMTcuMzIzOTY1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.O1U1bK9FHBkpTRhRHWHVBnxp8tERfW__EqgSVXWYG-w2ASL9kycO9wJ3jOOsH7vw0BaNL_ytsmhNNSakSA4hLThFxiS6KInRUrDSoFnANdxE8Uq1yYLaDCMlQEPEBJB6kxWceTqetxing46fDKA9Faxh34EqrsofkEHbPuO0M0g-Cj0WUDivzHVBU7UErVxYBLXPGodTMGtXRDp4nkvM0hQ_ubOBLeloa8yAu4m4EV2i-FwSFYt13Uwbj4-HEqU56ca9E4DtoAt-S_gxovVEioivwKmQyiKnCGRoZHzVvkJGk4EIcf6PQOE6hAvbu5RNpQwE6Rsoo9eSugvRedzKPls1p3UHKWTqnMB4TsBmsfX4N17Um38vhmbG4q1oNR422sFlNfbV39NuY4yV0MWz3_aC5J_lZcgbhipVSliQ3UImF74RmHB_o6VtPDXPhSMIqmm2DwpBK-zkpPt8Fhe5B9MTDy5Do4BBbq34_NNpw73yUnYVSb9v7NfOgFdATnh-Qwu8SwNcumpc4rnXKMSAK1NSRu1Lbm4VeGe2Br2sMvyfmJ9hS-8VW46DLU8cVhjNh4cKed4sg0RsdjAyzLg3x_duWETxT2Ua3E9vmzqha9SN3RBLCV5JIZ1sGbhMjKPgC5JjEa6uXhMmOVgvFnyL4SAMZ2Lm-a38lgC2zZnBCUo"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "wallet",
+							"value": "5",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/wallet"
+			},
+			"response": []
+		}
+	]
+}
